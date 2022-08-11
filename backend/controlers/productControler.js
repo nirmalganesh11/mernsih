@@ -22,7 +22,6 @@ const getProducts = asyncHandler(async (req, res) => {
     if(Cg){
         const products =  await Product.find({category : Cg});
         res.json(products)
-
     }
     else if(filter){
         switch (filter) {
@@ -55,7 +54,6 @@ const getProducts = asyncHandler(async (req, res) => {
     }else{
         const products =  await Product.find({...keyword});
         res.json(products)
-
     }
 })
 

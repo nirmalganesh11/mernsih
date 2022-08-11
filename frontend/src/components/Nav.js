@@ -140,7 +140,7 @@ import Searchnav from './Searchnav';
                         {userInfo && userInfo.isAdmin && (
                             <Menu>
                                   <MenuButton as = {Button}  rightIcon={<IoMdArrowDropdown />}>
-                                      Admin
+                                      Admin 
                                   </MenuButton>
                                   <MenuList>
                                   <MenuItem>

@@ -24,9 +24,8 @@ const CardProduct = ({product}) => {
        setIncart(true);
        dispatch(addToCart(product._id,1))
    }
-    
      return (
-        <>  
+        <> 
             <div className='cardProduct' onMouseOver={ ()=> {setShowbtn (true)}} 
                                           onMouseLeave= { ()=> {setShowbtn (false)}}>           
                  <div className='imgDiv'>
@@ -34,19 +33,14 @@ const CardProduct = ({product}) => {
                  </div>
                <div className='bottomcard'>
                        <Link to={`/product/${product._id}`} exact  >     
-                            <span>{product.name}</span>     
+                            <span><strong>{product.name}</strong></span>     
                        </Link>
                               {Incart ?  <HiShoppingCart className="iconFav" size ='26'/> : <HiOutlineShoppingCart  className="iconFav" color='#999' size='26'  onClick = {addcart}/>  }
-
-                       <div className = 'productpricecard'> {`${product.price} $`}</div>
+                       <div className = 'productpricecard'> {`${product.location}`}</div>
                        <div className = 'Rating'>
                        <Rating value={product.rating} text={`${product.numReviews} reviews`}/>
-
-                       </div>
-
-                             
+                       </div>          
                </div>
-              
                       <Link to={`/product/${product._id}`} exact >
                              <button className= { showbtn ? 'QuickView QuickViewActive' : 'QuickView' }> View Details</button>
                       </Link>   

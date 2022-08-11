@@ -112,8 +112,7 @@ const submithanlder = () =>{
             <div className = "img-item">
               <a href = "#" data-id = "3">
                 <Image  objectFit="cover"  boxSize = '200px' src = {product.images[2]} alt = "shoe image"/>
-
-
+                
               </a>
             </div>
         
@@ -122,7 +121,7 @@ const submithanlder = () =>{
  
         <div className = "product-content">
           <h2 className = "product-title">{product.name} </h2>
-          <Link to = '/shop' className = "product-link">visit our store</Link>
+          <Link to = '/shop' className = "product-link">visit college link</Link>
               <Rating
               value={product.rating}
               text={`${product.numReviews} reviews`}
