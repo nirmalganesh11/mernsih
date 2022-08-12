@@ -26,15 +26,9 @@ import Searchnav from './Searchnav';
      const rightItems = useRef(null)
      //signin
      const [signin,setSignin] = useState(null)
-
-
-
-
-
      const onSeacrhFun= () =>
         {
-
-                //Search Icon state + Bar
+            //Search Icon state + Bar
             setShowSearchIc(!showSearchIc) //false
             console.log(showSearchIc)
             searchRef.current.classList.toggle('searchActive')
@@ -101,10 +95,12 @@ import Searchnav from './Searchnav';
            <div className="logo"><Link to =''>AIUD</Link></div>
             <ul className="navLinks" ref= {navLinks}>
                 <NavLink to="/" exact  activeClassName='activlink' ><li>Home</li></NavLink>
+                
   
                 <NavLink to="/shop" activeClassName='activlink' ><li>Universities</li></NavLink>
                 <NavLink to="/contactus"activeClassName='activlink' ><li>Reviews</li></NavLink>
-                <NavLink to="/about" activeClassName='activlink'><li>About-AIUD</li></NavLink>  
+                <NavLink to="/about" activeClassName='activlink'><li>About-AIUD profile and write and write and this</li></NavLink>
+              
             </ul>
             <div className="burger" ref= {Buric} onClick = {onBurgActive}>
                 <div className='line1'></div>
